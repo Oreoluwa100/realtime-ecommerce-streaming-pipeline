@@ -2,10 +2,11 @@ import os
 import json
 import threading
 from dotenv import load_dotenv
-load_dotenv()
 import certifi
 from pymongo import MongoClient
 from google.cloud import pubsub_v1
+
+load_dotenv()
 
 # MongoDB connection
 MONGO_URI = os.getenv("MONGO_URI")
